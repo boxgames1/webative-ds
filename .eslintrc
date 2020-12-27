@@ -1,0 +1,45 @@
+{
+    "extends": [
+        "airbnb-typescript",
+        "plugin:testing-library/recommended"
+    ],
+    "parserOptions": {
+        "project": "./tsconfig.json"
+    },
+    "env": {
+        "browser": true,
+        "jest": true
+    },
+    "overrides": [
+        {
+            "files": [
+                "*.ts",
+                "*.tsx"
+            ],
+            "extends": [
+                "airbnb-typescript",
+                "plugin:testing-library/recommended",
+                "prettier",
+                "prettier/@typescript-eslint",
+                "prettier/react"
+            ],
+            "rules": {
+                "react/jsx-props-no-spreading": 0,
+                "react/prop-types": 0,
+                "import/prefer-default-export": 0,
+                "import/no-extraneous-dependencies": [
+                    0,
+                    {
+                        "devDependencies": [
+                            ".storybook/**",
+                            "stories/**"
+                        ]
+                    }
+                ]
+            }
+        }
+    ],
+    "plugins": [
+        "react-hooks"
+    ]
+}

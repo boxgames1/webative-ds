@@ -19,7 +19,7 @@ const lineHeights = {
   wider: "2em",
 };
 
-module.exports = {
+export default {
   sizes,
   letterSpacings,
   lineHeights,

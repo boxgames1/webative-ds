@@ -13,14 +13,14 @@ const large = "22px";
 const robotoFont =
   "https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap";
 const fontFamily = "font-family: 'Roboto', sans-serif;";
-const useFont = () => `
+export const useFont = () => `
   @font-face {
       ${fontFamily}
       src: url(${robotoFont}) format('truetype');
   }
 `;
 
-module.exports = {
+export default {
   fontSizes: {
     copy: small,
     subtitle: medium,
@@ -32,5 +32,4 @@ module.exports = {
     light,
     lighest,
   },
-  useFont,
 };

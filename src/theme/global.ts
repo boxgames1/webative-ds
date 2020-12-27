@@ -1,6 +1,6 @@
-const { createGlobalStyle } = require("styled-components");
-const colors = require("./colors");
-const { useFont } = require("./fonts");
+import { createGlobalStyle } from "styled-components";
+import colors from "./colors";
+import { useFont } from "./fonts";
 
 const GlobalStyles = createGlobalStyle`
   ${useFont()};
@@ -12,4 +12,4 @@ const GlobalStyles = createGlobalStyle`
   }
 `;
 
-module.exports = GlobalStyles;
+export default GlobalStyles;

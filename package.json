@@ -41,9 +41,16 @@
     "@storybook/addon-viewport": "^6.1.11",
     "@storybook/react": "^5.3.17",
     "@storybook/storybook-deployer": "^2.8.7",
+a    "@types/styled-components": "^5.1.7",
     "awesome-typescript-loader": "^5.2.1",
     "babel-loader": "^8.0.6",
+    "babel-plugin-styled-components": "^1.12.0",
+    "eslint-config-airbnb-typescript": "^12.0.0",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-testing-library": "^3.10.1",
     "jest": "^24.9.0",
+    "prettier": "^2.2.1",
     "react-docgen-typescript-loader": "^3.3.0",
     "typescript": "^3.6.4"
   }

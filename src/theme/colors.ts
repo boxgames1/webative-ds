@@ -3,7 +3,7 @@ const white = "#fff";
 const red = "#ff0000";
 const blue = "#0000ff";
 
-module.exports = {
+export default {
   error: red,
   primary: black,
   secondary: blue,
