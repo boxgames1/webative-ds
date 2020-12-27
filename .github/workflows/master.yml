@@ -18,9 +18,9 @@ jobs:
         with:
           node-version: '12'
 
-      - run: npm ci
+      - run: yarn
 
       - name: Deploy Storybook to Github Pages
-        run: npm run storybook:deploy -- --ci
+        run: yarn storybook:deploy -- --ci
         env:
           GH_TOKEN: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}
